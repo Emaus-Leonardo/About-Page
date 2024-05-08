@@ -50,7 +50,7 @@ function AboutSection() {
         <div className="relative right-[-50px] z-10 mb-36 ml-auto h-[300px] w-[300px] bg-colorRetangle" />
       </div>
 
-      <div className="relative ml-500px flex h-full w-[80%] flex-col items-center justify-center gap-9 bg-colorHeader p-14 pb-28 ">
+      <div className="relative ml-500px flex max-h-[1025px] h-full w-[80%] flex-col items-center justify-center gap-9 bg-colorHeader p-14 pb-[400px] ">
         <div>
           <img
             src={Hiro}
@@ -68,30 +68,27 @@ function AboutSection() {
         </div>
 
         <Container />
-        <div className="w-[80%]  text-base leading-6">
+        <div className="w-[80%] text-base leading-6">
           <p size="xs" as="p">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Ola, meu nome é Emaús Leonardo, mas pode me chamar de Léo.
+            Atualmente, estou mergulhando no mundo do desenvolvimento Front End
+            com o objetivo de aprimorar minhas habilidades para me posicionar no
+            mercado. Sou apaixonado por criar experiências online
+            impressionantes para os usuários e estou disposto a trabalhar em
+            projetos desafiadores e a ajudar equipes criativas e dinâmicas.
           </p>
         </div>
         <div className="w-[80%] text-base leading-6">
           <p size="xs" as="p">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Além disso, sou estudante do sexto semestre no curso de Análise e
+            Desenvolvimento de Sistemas na Universidade do Oeste Paulista, em
+            Presidente Prudente/SP.
+          </p>
+        </div>
+        <div className="w-[80%] text-base leading-6">
+          <p size="xs" as="p">
+            Também acumulei experiência como Estagiário de Suporte Técnico na
+            Prefeitura Municipal de Rancharia/SP por 1 ano e 6 meses.
           </p>
         </div>
       </div>
