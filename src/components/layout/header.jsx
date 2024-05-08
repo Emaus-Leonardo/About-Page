@@ -10,7 +10,7 @@ function Header() {
         </NavLink>
         <ul className="text-colorText text-xl flex space-x-6">
           <li>
-            <NavLink  to="/" className="hover:text-pink-500 transition-all">
+            <NavLink  to="/about" className="hover:text-pink-500 transition-all">
               Home
             </NavLink>
           </li>
