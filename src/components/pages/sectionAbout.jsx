@@ -1,72 +1,64 @@
 import React, { useState } from "react";
+import Tippy from "@tippyjs/react";
+
 import Mugetsu from "../img/Mugetsu.png";
 import Haku from "../img/Haku.png";
 import Hiro from "../img/Hiro.png";
+import Profile from "../img/Profile.png";
 import Container from "../layout/container";
+import "../pages/style.css";
 
 function AboutSection() {
   const [mugetsuHovered, setMugetsuHovered] = useState(false);
-  const [hiroHovered, setHiroHovered] = useState(false);
-  const [hakuHovered, setHakuHovered] = useState(false);
 
   return (
     <div className="flex h-[1025px] items-center justify-center bg-colorBg">
       <div className="relative flex h-full w-full items-center justify-center bg-gray-100">
         <p className="absolute mb-[450px] mr-[250px] text-[96px]">ABOUT</p>
         <div
-          className="mb-[570px] ml-3 absolute"
+          className="mb-[574px] ml-3 absolute"
           onMouseEnter={() => setMugetsuHovered(true)}
           onMouseLeave={() => setMugetsuHovered(false)}
         >
           <img
             src={Mugetsu}
             alt="mugetsu cat"
-            className={`hover:opacity-90 ${mugetsuHovered ? "opacity-90 cursor-pointer" : "opacity-100"}`}
+            className={`transition-opacity ${mugetsuHovered ? "opacity-85 cursor-pointer" : "opacity-100"}`}
           />
           <p
-            className={`absolute bottom-[60px] ml-0 ${mugetsuHovered ? "hover:opacity-100" : "opacity-0"}`}
+            className={`absolute bottom-[60px] ml-0 ${mugetsuHovered ? "transition-opacity" : "opacity-0"}`}
           >
             Mugetsu
           </p>
         </div>
 
         <div className="absolute left-0 mb-[550px] h-[7px] w-[160px] bg-colorFooter"></div>
-        <div className="absolute bottom-32 right-0 z-20 mb-36 h-[400px] w-[400px] bg-colorHeader" />
-        <div>
+        <div className="absolute bottom-32 right-0 z-20 mb-36 h-[400px] w-[400px]">
+          <img
+            className=" profile"
+            src={Profile}
+            alt="profile pic"
+          />
+        </div>
+
+        <Tippy content="Haku">
           <img
             src={Haku}
             alt="Haku cat"
-            className="cursor-pointer absolute top-[289px] z-20 right-0"
-            onMouseEnter={() => setHakuHovered(true)}
-            onMouseLeave={() => setHakuHovered(false)}
-            style={{ opacity: hakuHovered ? 0.7 : 1 }}
+            className="cursor-pointer absolute transition-opacity hover:opacity-70 top-[289px] z-20 right-0 mr-[50px]"
           />
-          <p
-            className={`absolute bottom-[740px] ml-[970px] z-30 ${hakuHovered ? "hover:opacity-100" : "opacity-0"}`}
-          >
-            Hiro
-          </p>
-        </div>
-        <div className="relative right-[-50px] z-10 mb-36 ml-auto h-[300px] w-[300px] bg-colorRetangle" />
+        </Tippy>
+        <div className="relative rounded-lg right-[-50px] z-10 mb-[90px] ml-auto h-[300px] w-[300px] bg-colorRetangle" />
       </div>
 
-      <div className="relative ml-500px flex max-h-[1025px] h-full w-[80%] flex-col items-center justify-center gap-9 bg-colorHeader p-14 pb-[400px] ">
-        <div>
+      <div className="relative ml-500px flex max-h-[1025px] h-full w-[80%] flex-col items-center justify-center gap-9 bg-colorHeader p-14 pb-[250px] ">
+        <Tippy content="Hiro">
           <img
             src={Hiro}
             alt="Hiro cat"
-            className=" cursor-pointer absolute bottom-0 left-0"
-            onMouseEnter={() => setHiroHovered(true)}
-            onMouseLeave={() => setHiroHovered(false)}
-            style={{ opacity: hiroHovered ? 0.7 : 1 }}
+            className=" cursor-pointer absolute bottom-0 left-0 transition-opacity hover:opacity-75"
           />
-          <p
-            className={`absolute bottom-[60px] ml-[-410px] ${hiroHovered ? "hover:opacity-100" : "opacity-0"}`}
-          >
-            Hiro
-          </p>
-        </div>
-
+        </Tippy>
         <Container />
         <div className="w-[80%] text-base leading-6">
           <p size="xs" as="p">

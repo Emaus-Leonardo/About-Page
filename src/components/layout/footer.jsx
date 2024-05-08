@@ -10,10 +10,10 @@ function Footer() {
             Home
           </Link>
           <Link to="/about" className="px-2 text-gray-300 hover:text-white">
-            Sobre
+            About
           </Link>
           <Link to="/contact" className="px-2 text-gray-300 hover:text-white">
-            Contato
+            Contact
           </Link>
         </nav>
       </div>
