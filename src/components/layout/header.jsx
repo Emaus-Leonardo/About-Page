@@ -11,7 +11,7 @@ function Header() {
         <ul className="text-gray-600 text-xl flex space-x-6">
           <li>
             <NavLink
-              to="/home"
+              to="/"
               className="hover:text-colorText hover transition-all"
             >
               Home
