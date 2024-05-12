@@ -5,14 +5,14 @@ function Header() {
   return (
     <header className="bg-colorHeader p-8">
       <nav className="container mx-auto flex items-center justify-between">
-        <NavLink to="/" className="text-colorText text-[30px] font-bold">
+        <NavLink to="/" className="text-colorText text-[30px] font-bold ">
           Léo
         </NavLink>
         <ul className="text-gray-600 text-xl flex space-x-6">
           <li>
             <NavLink
               to="/"
-              className="hover:text-colorText hover transition-all"
+              className="hover:text-colorText transition-all"
             >
               Home
             </NavLink>
